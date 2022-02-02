@@ -97,6 +97,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   text-align: left;
+  color: #e2e3ed;
 }
 
 ul,
@@ -115,6 +116,7 @@ a {
 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
+  font-weight: 500;
 }
 
 h3,
@@ -122,6 +124,7 @@ h4 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.125em;
   margin: 20px 0;
+  font-weight: 500;
 
 }
 
@@ -133,10 +136,12 @@ p {
 }
 
 img {
+  width: 100%;
 
 }
 
 figure {
+  margin: 0;
 
 }
 
@@ -158,6 +163,7 @@ address {
 header,
 footer {
   display: flex;
+  background-color: #202333;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
@@ -168,7 +174,7 @@ footer {
 
 header {
   padding: 15px 0;
-  background-color: black;
+
 }
 
 header .content-wrapper {
@@ -180,7 +186,17 @@ header .content-wrapper {
 
 }
 
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+
+}
+
 .header-divider {
+  background: #3a3a3a;
   width: 100%;
   height: 1px;
   margin: 10px 0 20px 0;
@@ -188,6 +204,9 @@ header .content-wrapper {
 
 header nav {
   width: 60%;
+  font-size: 1.125em;
+  font-weight: 700;
+  text-transform: uppercase;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -202,10 +221,14 @@ header nav ul {
   
 }
 
+header nav ul li {
+
+  font-size: 1.125em;
+}
+
 footer {
   flex-direction: column;
-  background-color: black;
-  color: white;
+  text-align: center;  
 }
 
 footer p {
@@ -222,8 +245,7 @@ footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
-  background color: #5f804b;
+
 }
 
 footer .content-wrapper {
@@ -247,7 +269,17 @@ footer .copyright {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url('../img/background.jpg');
+  background-size: cover;
+  background-position: center;
 
+}
+
+.hero-area h1 {
+  font-size: 2.25em;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 /* ---- Aside ----- */
@@ -257,9 +289,34 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  background-color: #789e60;
-  color: white;
+  background-color: #527158;
 
+}
+
+aside .form{
+  margin-top: 30px;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /* --- Features ---*/
@@ -268,6 +325,10 @@ aside {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url('../img/features.jpg');
+  background-size: cover;
+  background-position: center;
+
 }
 
 .features h2 {
@@ -297,8 +358,11 @@ aside {
   display: flex;
   justify-content: space-between;
   flex-flow: row wrap;
-  background-color: #5f804b;
   color: white;
+  background: url('../img/review.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 
 }
 
@@ -314,6 +378,7 @@ aside {
 /* --- About Page ----*/
 
 .mission {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -321,6 +386,7 @@ aside {
 }
 
 .contact-section {
+  background-color: #2a423a;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -334,6 +400,7 @@ aside {
 /* --- FAQ Page ---- */
 
 .faq {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -356,6 +423,11 @@ aside {
   margin-bottom: 50px;
 }
 
+.faq-content h4 {
+
+  line-height: 1.333;
+
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -482,7 +554,6 @@ input[type=button] {
   header {
     justify-content: space-around;
     padding: 33px 0;
-
   }
 
   header .content-wrapper {
