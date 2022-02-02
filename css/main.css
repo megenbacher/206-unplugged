@@ -486,7 +486,7 @@ input[type=button] {
   }
 
   header .content-wrapper {
-    justify-content: 100%;
+    justify-content: space-between;
     width:100%;
   }
 
