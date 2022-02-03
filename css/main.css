@@ -187,12 +187,12 @@ header .content-wrapper {
 }
 
 header figure {
+  background: url('../img/logo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   width: 60%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-
+  
 }
 
 .header-divider {
@@ -245,7 +245,14 @@ footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #527158;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
 
+footer .socials-icons p i {
+  font-size: 1.3125em;
 }
 
 footer .content-wrapper {
@@ -272,6 +279,7 @@ footer .copyright {
   background: url('../img/background.jpg');
   background-size: cover;
   background-position: center;
+  min-height: 500px;
 
 }
 
@@ -348,7 +356,13 @@ input[type=button] {
 
 }
 
+.features i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
+}
+
 .feature p {
+  text-align: center;
   margin: 0;
 }
 
@@ -356,7 +370,7 @@ input[type=button] {
 
 .reviews {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-flow: row wrap;
   color: white;
   background: url('../img/review.jpg');
@@ -368,6 +382,7 @@ input[type=button] {
 
 .reviews h2 {
   margin-bottom: 40px;
+  line-height: 1;
 }
 
 .reviews h3 {
@@ -435,6 +450,7 @@ input[type=button] {
 
 .faq h2 {
   margin-bottom: 40px;
+  line-height: 1;
 }
 
 .faq-content {
