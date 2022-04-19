@@ -282,6 +282,9 @@
   }
   
   /* ---- MOBILE STYLES HOMEPAGE -----*/
+  @media only screen and (max-width: 480px) {
+    
+  
   
   /* ----Hero Area ----*/
   
@@ -475,51 +478,7 @@
   
   
   
-  /*** MINE
-  .faq {
-    align-items: center;
-    background-color: #527158;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-  }
-  
-  .faq .content-wrapper {
-    align-items: center;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    margin: 20px 0;
-    padding: 5px;
-    flex-basis: 100%;
-  }
-  
-  .faq h1 {
-    font-family: 'Poppins', Helvetica, Arial, sans-serif;
-    font-size: 2.185em;
-    font-weight: 500;
-    line-height: 1.25;
-    margin: 0;
-  }
-  
-  .faq h2 {
-    font-size: 1em;
-    font-weight: 500;
-    line-height: 1;
-    margin-bottom: 40px;
-  }
-  
-  .faq-content {
-    justify-content: space-between;
-    padding: 0 5px;
-  }
-  
-  .faq-content h4 {
-    line-height: 1.333;
-    margin: 10px 0;
-  }
-  /*** MINE****/
-  
+ 
   /* ==========================================================================
      Helper classes
      ========================================================================== */
@@ -671,7 +630,7 @@
       display: flex;
       justify-content: space-between;
       flex-flow: row wrap;
-  
+
     }
   
     aside .content-wrapper .form-description,
@@ -820,75 +779,7 @@
     }
   }
   
-  
-  
-  
-  
-  
-  /*** LAURELS
-    .faq .content-wrapper {
-    justify-content: space-between;
-  }
-  
-  .faq .content-wrapper {
-    margin: 50px 0 40px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-flow: row wrap;
-  }
-  
-  .faq-content {
-    flex-basis: 45%;
-    margin-bottom: 10px;
-  }
-  
-  .faq h1 {
-    margin-bottom: 20px;
-    width: 100%;
-  }
-  
-  .faq h4,
-  .faq p {
-    font-size: .875em;
-    line-height: 1.125;
-    }
-  }
-  
-  /***** LAUREL
-  
-  
-    /***** MINE 
-    .faq .content-wrapper {
-      justify-content: space-between;
-    }
-  
-    .faq-content {
-      flex-basis: 45%;
-      display: flex;
-      align-items: row wrap;
-      flex-direction: column;
-      justify-content: space-around;
-      margin-bottom: 10px;
-    }
-  
-    .faq h2 {
-      width: 100%;
-    }
-  
-    .faq h4,
-    .faq p {
-        font-size: .875em;
-        line-height: 1.125;
-    }
-  
-    .faq h1 {
-      margin: 40px 0;
-    }
-  
-  }
-  
-  /***** MINE***/
+
   
   
   @media only screen and (min-width:1200px) {
@@ -1021,43 +912,6 @@
   
   }
   
-  /*** SKILLCRUSH
-  .faq h2 {
-      width: 100%;
-      font-size: 3em;
-    }
-      
-    .faq h4,
-    .faq p {
-        font-size: 1.125em;
-        line-height: 1;
-    }
-  }
-  /**** SKILLCRUSH ****/
-  
-  
-  
-  /*** MINE
-    .faq .content-wrapper {
-      display: flex;
-      flex-basis: 45%;
-      align-items: center;
-      justify-content: space-between;
-    }
-  
-    .faq h2 {
-      width: 100%;
-      font-size: 3em;
-    }
-      
-    .faq h4,
-    .faq p {
-        font-size: 1.125em;
-        line-height: 1;
-    }
-  
-  }
-  /***** MINE
   
   
   /* ==========================================================================
@@ -1135,5 +989,5 @@
     }
   }
   
-  
+}
   
