@@ -103,17 +103,21 @@
   }
   
   body {
-    font-family: 'Open Sans', sans-serif;
     font-size: 1em;
-    text-align: left;
+    font-family: 'Open Sans', sans-serif;
     color: #e2e3ed;
+    text-align: left;
+   
   }
   
   ul,
   ol {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
   
   }
   
@@ -126,18 +130,17 @@
   
   h2 {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.875em;
     font-weight: 500;
+    font-size: 1.875em;
     margin: 0;
   }
   
   h3,
   h4 {
     font-family: 'Poppins', sans-serif;
+    font-weight: 500;
     font-size: 1.125em;
     margin: 20px 0;
-    font-weight: 500;
-  
   }
   
   p {
@@ -173,8 +176,8 @@
   
   header,
   footer {
-    display: flex;
     background-color: #202322;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
@@ -198,18 +201,17 @@
   }
   
   header figure {
-    align-items: center;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
     width: 60%;
-    
-  }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+   }
   
   .header-divider {
     background: #3a3a3a;
-    width: 100%;
     height: 1px;
+    width: 100%;
     margin: 10px 0 20px 0;
   }
   
@@ -228,12 +230,11 @@
   header nav ul {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     
   }
   
   header nav ul li {
-    
     font-size: 1.125em;
   }
   
@@ -245,6 +246,16 @@
   
   footer p {
     margin: 0;
+  }
+
+  footer .content-wrapper {
+    width: 55%;
+    margin: 50px 0;
+  
+  }
+
+  footer .contact {
+    margin-bottom: 50px;
   }
   
   footer .social-icons {
@@ -267,22 +278,12 @@
     font-size: 1.3125em;
   }
   
-  footer .content-wrapper {
-    width: 55%;
-    margin: 50px 0;
-  
-  }
-  
-  footer .contact {
-    margin-bottom: 50px;
-  }
-  
   footer .copyright {
     margin: 20px 0;
   }
   
   /* ---- MOBILE STYLES HOMEPAGE -----*/
-  @media only screen and (max-width: 480px) {
+ 
     
   
   
@@ -414,21 +415,21 @@
     justify-content: center;
   }
   
-  .embed-container { 
-    position: relative; 
-    padding-bottom: 56.25%; 
-    height: 0; 
-    overflow: hidden; 
-    max-width: 100%;
-    } 
-  
-    .embed-container iframe, .embed-container object, .embed-container embed { 
-      position: absolute; 
-      top: 0; 
-      left: 0; 
-      width: 100%; 
-      height: 100%; 
-    }
+  .map figure {
+    width: 100%;
+    height: 0;
+    padding-bottom: 1255;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .map iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
   
   .contact-section {
     align-items: center;
@@ -437,6 +438,7 @@
     display: flex;
     justify-content: center;
   }
+
   
   .contact-content p {
     margin: 0;
@@ -456,7 +458,6 @@
   
   .faq .content-wrapper {
     margin: 50px 0 0 0;
-    display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
@@ -470,15 +471,16 @@
   .faq-content {
     margin-bottom: 50px;
   }
+
+  .faq-content {
+    margin-bottom: 50px;
+  }
   
   .faq-content h4 {
     line-height: 1.333;
   }
+
   
-  
-  
-  
- 
   /* ==========================================================================
      Helper classes
      ========================================================================== */
@@ -571,7 +573,7 @@
   
     /* General styles */
     .content-wrapper {
-      max-width: 640px;
+      max-width: 768px;
       margin: 100px 0;
     }
         
@@ -593,7 +595,7 @@
   
     header .content-wrapper {
       width: 100%;
-      justify-content: space-around;
+      justify-content: space-between;
     }
   
     header figure {
@@ -681,10 +683,7 @@
       margin: 0;
     }
     /* Footer */
-    footer {
-      flex-direction: row;
-    }
-  
+
     footer .content-wrapper {
       width: 65%;
       margin: 100px 0;
@@ -693,12 +692,12 @@
     footer .footer-content {
       display: flex;
       justify-content: space-between;
-      align-items: flex-start;
+      align-items: center;
       flex-direction: row;
     }
   
     footer .contact {
-      margin-bottom: 40px;
+      margin-bottom: 0;
     }
   
     footer h4 {
@@ -752,9 +751,6 @@
       font-size: 1.5em;
     }
   
-    .contact h3, h4 {
-      margin: 20px 40px;
-    }
   
     /* ==========================================================================
      FAQ Page
@@ -779,15 +775,11 @@
     }
   }
   
-
-  
-  
   @media only screen and (min-width:1200px) {
     /*Desktop styles here*/
   
-    header, footer {
+    header {
       padding: 15px 0;
-      flex-direction: row;
     }
   
     .content-wrapper {
@@ -873,28 +865,12 @@
     /* ==========================================================================
     FAQ Page
     ========================================================================== */
-  
-    .faq .content-wrapper {
-    justify-content: space-between;
-  }
-  
-  .faq .content-wrapper {
-    margin: 50px 0 40px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-flow: row wrap;
-  }
-  
-  .faq-content {
-    flex-basis: 45%;
-    margin-bottom: 10px;
-  }
-  
-  .faq h1 {
-    margin-bottom: 30px;
+  .faq h2 {
     width: 100%;
+    font-size: 3em;
   }
+   
+
   
   .faq h4,
   .faq p {
@@ -902,17 +878,8 @@
     line-height: 1;
     }
   
-  .faq h4 {
-    margin: 0;
   }
-  
-  footer .footer-content {
-    width: 100%
-  }
-  
-  }
-  
-  
+
   
   /* ==========================================================================
      Print styles.
@@ -988,6 +955,3 @@
       page-break-after: avoid;
     }
   }
-  
-}
-  
