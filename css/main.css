@@ -590,7 +590,7 @@
     /* Header */
     header {
       justify-content: space-around;
-      padding: 33px 0;
+      padding: 33px 33px;
     }
   
     header .content-wrapper {
